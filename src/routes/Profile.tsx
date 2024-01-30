@@ -7,6 +7,7 @@ export const Profile = () => {
 
   const fullName = useMemo(() => {
     if (!currentUser) return "";
+
     return `${currentUser.firstName} ${currentUser.lastName}`;
   }, [currentUser]);
 

@@ -7,6 +7,7 @@ import { RouterProvider } from "react-router-dom";
 import { router } from "./routes.tsx";
 
 const queryClient = new QueryClient();
+
 async function enableMocking() {
   if (ENV_VARS.IS_PROD) return;
 

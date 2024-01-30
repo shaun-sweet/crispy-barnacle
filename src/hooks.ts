@@ -23,6 +23,7 @@ export const useGetFriends = (userId?: string) => {
 export const useGetPosts = () => {
   const { data: currentUser } = useGetCurrentUser();
   const userId = currentUser?.id;
+
   return useQuery<Post[]>(
     [QUERY_KEYS.POSTS, userId],
     () => fetch(`/users/${userId}/friends/posts`).then((res) => res.json()),

@@ -6,6 +6,7 @@ export const PostDetails = () => {
   const routeParams = useParams();
   const postId = routeParams.postId;
   const { data: post } = useGetPostById(postId);
+
   if (!post) return null;
 
   return <Post post={post} />;
