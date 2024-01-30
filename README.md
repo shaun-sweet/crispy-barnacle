@@ -1,6 +1,6 @@
-### Social Media App
+## Social Media App
 
-## Getting Started
+### Getting Started
 
 In the root directory of this repository run the following:
 
